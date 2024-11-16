@@ -16,7 +16,7 @@ public class Test {
     }
     public static List<String> parseFileToStringList () {
         File file = new File("people.txt");
-        List<String> people = new ArrayList<>();
+        List<String> people = new LinkedList<>();
         try {
             Scanner input = new Scanner(file);
             while (input.hasNextLine()) {
